@@ -4,7 +4,7 @@ This repository contains my personal portfolio website showcasing my skills,
 projects, and experience as a **Software Developer & Graphic Designer**.
 
 🌐 **Live Demo:**  
-https://ester-mjenda.github.io/portfolio
+https://ester-mjenda.github.io/Portfolio
 
 ---
 
