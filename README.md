@@ -1,2 +1,44 @@
-# Portfolio
-A modern, responsive personal portfolio website showcasing my skills, projects, and experience as a Software Developer and Graphic Designer.
+# Ester Mjenda | Portfolio
+
+This repository contains my personal portfolio website showcasing my skills,
+projects, and experience as a **Software Developer & Graphic Designer**.
+
+🌐 **Live Demo:**  
+https://ester-mjenda.github.io/portfolio
+
+---
+
+## About Me
+
+I am a final-year **Computer Science** student at **St. Joseph University in Tanzania**
+with a passion for building modern web applications, ERP systems, and creative designs.
+
+---
+
+## Skills
+
+- **Web:** HTML, CSS, JavaScript, Bootstrap  
+- **Programming:** Python, JavaScript, C, SQL  
+- **Frameworks:** Frappe Framework, ERPNext  
+- **Tools:** Git, GitHub, GitHub Desktop  
+- **Design:** Photoshop, Canva  
+
+---
+
+## Projects
+
+- Responsive websites using modern web technologies  
+- ERPNext customization with Frappe Framework  
+- Graphic design projects (logos, posters, branding)  
+
+---
+
+## Contact
+
+📧 Email: esthermjenda@gmail.com  
+📞 Phone: +255 759 596 406  
+💻 GitHub: https://github.com/Ester-Mjenda  
+
+---
+
+© 2026 Ester Mjenda | Powered by **Sphinx Fighter Limited**
