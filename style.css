@@ -53,7 +53,7 @@ body {
     justify-content: space-evenly; 
     display: flex; 
     padding: clamp(3rem, 4.6vw, 6rem) 3rem; 
-    background-image: url(images/4579.jpg); 
+    background-image: url(images/3635065.jpg); 
     background-size: 100%; 
     background-repeat: no-repeat; 
 } 
@@ -93,7 +93,7 @@ body {
     border: 1px solid white; 
 }
 .hero .right img{ 
-    max-height: 420px; 
+    max-height: 425px; 
     width: auto; 
     padding-top: 2rem; 
     border-radius:25%; 
@@ -153,6 +153,7 @@ body {
 #about img{ 
     height: 25rem; 
     margin-top: 2rem; 
+    border-radius: 10% 0%;
     margin-right: 3rem; 
 } 
 .breathing-img:hover { 
