@@ -24,7 +24,12 @@ with a passion for building modern web applications, ERP systems, and creative d
 - **Design:** Photoshop, Canva  
 
 ---
+## Experience
 
+- Programming & Technology Trainer  
+- Digital Research & Document Support   
+
+---
 ## Projects
 
 - Responsive websites using modern web technologies  
