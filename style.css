@@ -47,13 +47,14 @@ body {
     cursor: pointer; 
 }
 .hero { 
-    background: #11224d; 
+    /* background: #11224d;  */
     color: white; 
     text-align: center; 
     justify-content: space-evenly; 
     display: flex; 
     padding: clamp(3rem, 4.6vw, 6rem) 3rem; 
-    background-image: url(images/3635065.jpg); 
+    background: linear-gradient(rgba(19, 64, 179, 0.5), rgba(23, 49, 117, 0.85)),
+              url(images/3635065.jpg); 
     background-size: 100%; 
     background-repeat: no-repeat; 
 } 
@@ -93,10 +94,10 @@ body {
     border: 1px solid white; 
 }
 .hero .right img{ 
-    max-height: 425px; 
-    width: auto; 
+    max-height: 405px; 
+    /* width: 100%;  */
     padding-top: 2rem; 
-    border-radius:25%; 
+    border-radius:12%; 
 }
 .ticker { 
     background-image: url(images/4579.jpg); 
@@ -182,7 +183,7 @@ body {
     justify-content: space-evenly; 
 } 
 .card { 
-    background: #f9fafb;
+    background: #fff;
     padding: 22px; 
     margin-bottom: 2rem; 
     font-size: clamp(0.9rem, 1.4vw, 1rem); 
@@ -218,7 +219,9 @@ body {
 
 /* EXPERIENCE */
 #experience .flex {
-  gap: 2.5rem;
+  gap: 1rem;
+  justify-content: space-evenly;
+  /* margin: auto; */
 }
 
 /* PROJECTS */ 
@@ -233,11 +236,11 @@ body {
 } 
 #projects .p2 .right{ 
    width: 50%; 
-   padding-top: 3rem;
+   /* padding-top: 1rem; */
    padding-right: 2rem;
 } 
 .project{ 
-    padding-top: 1.7rem; 
+    padding-top: 1.1rem; 
 } 
 .slider { 
     overflow: hidden; 
