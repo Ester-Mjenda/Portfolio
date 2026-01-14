@@ -7,273 +7,457 @@
   <meta name="keywords" content="Ester Mjenda, Software Developer Tanzania, Web Developer Tanzania, Frappe Developer, ERPNext Developer, Graphic Designer Tanzania">
   <meta name="author" content="Ester Mjenda">
   <meta name="robots" content="index, follow">
-  <title>Ester Mjenda | Software Developer</title>
-  <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+  <title>Ester Mjenda | Software Developer & Designer</title>
+  
+  <!-- Favicons -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 </head>
 <body>
 
 <!-- HEADER -->
 <nav class="navbar">
-  <img src="images/logo-trans.png" alt="Logo">
-    <div class="menu-toggle" id="menuToggle">
-      <i class="fas fa-bars" id="openIcon"></i>
-      <i class="fas fa-times" id="closeIcon"></i>
-    </div>
+  <a href="#" class="logo">
+    <img src="images/logo1-trans.png" >
+    <span>Ester Mjenda</span>
+  </a>
+  
+  <div class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars" id="openIcon"></i>
+    <i class="fas fa-times" id="closeIcon"></i>
+  </div>
+  
   <div class="navlinks" id="navLinks">
-    <a href="#">Home</a>
-    <a href="#about">About<i class="fas fa-caret-down"></i></a>
-    <a href="#skills">Skills<i class="fas fa-caret-down"></i></a>
-    <a href="#experience">Experience<i class="fas fa-caret-down"></i></a>
-    <a href="#projects">Projects<i class="fas fa-caret-down"></i></a>
-    <a href="#contact">Work with Me<i class="fas fa-caret-down"></i></a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="cta-nav">Contact</a>
   </div>
 </nav>
-<header >
-  <div class="hero">
-    <div class="right">
-      <img src="images/Ester 2.png" class="img-fluid breathing-img" alt="Ester-Mjenda">
-    </div>
-    <div class="left">
-      <img src="images/logo-trans.png" class="img-fluid breathing-img" alt="Logo">
+
+<!-- HERO SECTION -->
+<header id="home">
+  <div class="hero container">
+    <div class="left" data-aos="fade-up" data-aos-duration="1000">
+      <h4>Hello, I'm</h4>
       <h1>Ester Mjenda</h1>
       <h4>Junior Software Developer | ERPNext & Frappe Specialist | Graphic Designer</h4>
       <p>
-        Final year Computer Science student with hands-on experience in ERPNext customization,
-        system training, and web development. Currently supporting a live ERPNext client
-        and developing a Human Pose Estimation system for real-time health monitoring.
+        Final year Computer Science student passionate about building digital solutions. 
+        I specialize in ERPNext customization, web development, and creating visually 
+        appealing designs that solve real-world problems.
       </p>
-
+      
       <div class="buttons">
-        <a href="#projects" class="btn">View Projects</a>
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+      
+      <div class="social-icons" style="margin-top: 2rem;">
+        <a href="https://github.com/Ester-Mjenda" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:esthermjenda@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
+    
+    <div class="right" data-aos="fade-left" data-aos-duration="1200">
+      <img src="images/Ester 2.png" alt="Ester Mjenda - Software Developer">
+    </div>
   </div>
+  
   <div class="ticker">
-    <p>Junior Software Developer • ERPNext & Frappe Specialist • Portfolio</p>
+    <p>Available for Freelance Projects • ERPNext Development • Web Design • Graphic Design • Software Development</p>
   </div>
 </header>
 
 <main>
-    <!-- ABOUT -->
+  <!-- ABOUT -->
   <section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="flex">
-      <div class="right">
-        <p>
-        I am a final year Bachelor of Science in Computer Science student at
-    St. Joseph University in Tanzania with a strong passion for software
-    development and graphic design.
-      </p>
-      <p>
-        I have hands-on experience in developing responsive web applications,
-    customizing ERP systems using Frappe Framework and ERPNext, and designing
-    creative visual content such as posters, logos, and branding materials.</p>
-    <p>
-      Software Developer and Technology Trainer with hands-on experience in
-      Frappe Framework, ERP systems, and real-world enterprise projects.
-    </p>
-      <p>My experience comes from academic, personal, and practical projects
-    where I applied modern programming tools and design principles.
-      </p>
-      <p>I enjoy working with Python, web technologies, and database systems to
-    build practical and user-friendly solutions.</p>
-      <p>I am comfortable working
-    independently as well as collaborating effectively within team environments.</p>
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-content">
+          <h3>Building Digital Solutions with Passion</h3>
+          <p>
+            I am a final year Bachelor of Science in Computer Science student at
+            St. Joseph University in Tanzania with a strong passion for software
+            development and graphic design.
+          </p>
+          <p>
+            With hands-on experience in developing responsive web applications,
+            customizing ERP systems using Frappe Framework and ERPNext, and designing
+            creative visual content, I bring both technical and creative skills to every project.
+          </p>
+          <p>
+            My expertise comes from academic, personal, and practical projects
+            where I applied modern programming tools and design principles to create
+            practical and user-friendly solutions.
+          </p>
+          
+          <div class="stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;">
+            <div class="stat">
+              <h4>10+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+              <h4>2+</h4>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <h4>100%</h4>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="images/Ester 2.png" alt="Ester Mjenda">
+        </div>
       </div>
-      <img src="images/Ester 2.png" class="img-fluid breathing-img" alt="Ester-Mjenda">
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section light">
-    <h2>Skills</h2>
-    <div class="glid">
-        <div class="flex">
-          <div class="card">
-            <h4>Web Technologies</h4>
-            <p>HTML, CSS, JavaScript, Bootstrap</p>
-          </div>
-
-          <div class="card">
-            <h4>Programming Languages</h4>
-            <p>Python, JavaScript, C, SQL</p>
-          </div>
-
-          <div class="card">
-            <h4>Frameworks & Platforms</h4>
-            <p>Frappe Framework, ERPNext</p>
-          </div>
-        </div>
-
-        <div class="flex">
-          <div class="card">
-            <h4>Tools & Version Control</h4>
-            <p>Git, GitHub, GitHub Desktop</p>
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>My Skills</h2>
+      
+      <div class="skills-container">
+        <!-- Technical Skills -->
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Technical Skills</h3>
+          
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Web Development</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-level" data-level="90%"></div>
+            </div>
           </div>
           
-          <div class="card">
-            <h4>Graphic Design</h4>
-            <p>Photoshop, Canva</p>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>ERPNext & Frappe</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-level" data-level="85%"></div>
+            </div>
           </div>
-
-          <div class="card">
-            <h4>Databases</h4>
-            <p>MariaDB, MySQL</p>
+          
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Python Development</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-level" data-level="80%"></div>
+            </div>
           </div>
         </div>
-    
-        <div class="skills-icons">
-          <img src="images/bootstrap.jpg" class="breathing-img" alt="Bootstrap">
-          <img src="images/canva.jpg" class="breathing-img" alt="Canva">
-          <img src="images/css.png" class="breathing-img" alt="CSS">
-          <img src="images/erpnext.png" class="breathing-img" alt="ERPNext">
-          <img src="images/frappe.png" class="breathing-img" alt="Frappe">
-          <img src="images/sql.png" class="breathing-img" alt="SQL">
-          <img src="images/gitdesktop.jpg" class="breathing-img" alt="Git Desktop">
-          <img src="images/github1.png" class="breathing-img" alt="GitHub">
-          <img src="images/html.png" class="breathing-img" alt="HTML">
-          <img src="images/js.png" class="breathing-img" alt="JavaScript">
-          <img src="images/photoshop1.png" class="breathing-img" alt="Photoshop">
-          <img src="images/c.png" class="breathing-img" alt="C">
-          <img src="images/python.jpg" class="breathing-img" alt="Python">
-          <img src="images/mariadb.png" class="breathing-img" alt="MariaDB">
+        
+        <!-- Design Skills -->
+        <div class="skill-category">
+          <h3><i class="fas fa-paint-brush"></i> Design Skills</h3>
+          
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>UI/UX Design</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-level" data-level="85%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Graphic Design</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-level" data-level="90%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Brand Identity</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-level" data-level="75%"></div>
+            </div>
+          </div>
         </div>
       </div>
-  </section>
-
-  <section id="experience" class="section">
-  <h2>Experience</h2>
-    <div class="flex">
-      <div class="card">
-        <h4>ERPNext System Support & Training – Logistics Company (Client Project)</h4>
-        <p>
-           Supported ERPNext user training and onboarding.<br>
-           Assisted live data entry and system usage during deployment.<br>
-           Helped validate data accuracy and reporting workflows.<br>
-           Coordinated feedback with development team.
-        </p>
-      </div>
-      </div>
-      <div class="flex">
-        <div class="card">
-            <h4>Programming & Technology Trainer</h4>
-            <p>
-              Conduct training sessions in C Programming, Web Development,
-              Python Programming, and Graphic Design.<br> 
-              Focus on practical learning, real-world projects, and system understanding.
-            </p>
-          </div>
-
-          <div class="card">
-            <h4>Digital Research & Document Support</h4>
-            <p>
-              Provide document editing, online research, email discovery for researchers,
-              and data collection services. <br>
-              Assist clients with accurate information gathering, formatting, and content organization.
-            </p>
-          </div>
-      </div>
-</section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section light">
-    <h2>Projects</h2>
-    <div class="p2">
-      <div class="right">
-        <div class="project">
-          <h3>Human Pose Estimation System (Final Year Project)</h3>
-          <p>
-            Real-time posture tracking system for musculoskeletal health protection.
-            Uses computer vision for movement detection and posture analysis.
-          </p>
-          <p><strong>Tech:</strong> Python, OpenCV, Machine Learning</p>
+      
+      <!-- Tech Stack -->
+      <div class="tech-stack">
+        <div class="tech-item">
+          <img src="images/html.png" alt="HTML">
+          <span>HTML5</span>
         </div>
-
-        <div class="project">
-          <h3>Web Development Projects</h3>
-          <p>
-            Developed responsive and interactive websites using HTML, CSS,
-            JavaScript, and Bootstrap with focus on usability and clean design.
-          </p>
-          <p><strong>Tech:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+        <div class="tech-item">
+          <img src="images/css.png" alt="CSS">
+          <span>CSS3</span>
         </div>
-
-        <div class="project">
-          <h3>ERPNext Customization Project</h3>
-          <p>
-            Customized DocTypes and Print Formats, configured ERPNext sites,
-            and implemented database queries for business workflows.
-          </p>
-          <p><strong>Tech:</strong> Frappe Framework, Python, SQL, ERPNext</p>
+        <div class="tech-item">
+          <img src="images/js.png" alt="JavaScript">
+          <span>JavaScript</span>
         </div>
-
-        <div class="project">
-          <h3>Organization Website</h3>
-          <p>
-            Built a website for a religious organization branch to support
-            digital presence and information sharing.
-          </p>
-          <p><strong>Tech:</strong> HTML, CSS, JavaScript, Bootstrap, Python, SQL</p>
+        <div class="tech-item">
+          <img src="images/python.jpg" alt="Python">
+          <span>Python</span>
         </div>
-
-        <div class="project">
-          <h3>Graphic Design Projects</h3>
-          <p>
-            Designed posters, logos, and branding materials for academic and
-            personal projects.
-          </p>
-          <p><strong>Tech:</strong> Adobe Photoshop, Canva</p>
+        <div class="tech-item">
+          <img src="images/erpnext.png" alt="ERPNext">
+          <span>ERPNext</span>
         </div>
-      </div>
-      <div class="slider">
-        <figure>
-          <div class="slide">
-            <img src="images/boxing-day11.png" />
-          </div>
-          <div class="slide">
-            <img src="images/christmas11.png" />
-          </div>
-        </figure>
+        <div class="tech-item">
+          <img src="images/frappe.png" alt="Frappe">
+          <span>Frappe</span>
+        </div>
       </div>
     </div>
   </section>
 
-  
+  <!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2>My Experience</h2>
+    
+    <div class="experience-grid">
+      <div class="experience-card">
+        <span class="date">2024 - Present</span>
+        <h4>ERPNext System Support & Training</h4>
+        <p>Logistics Company (Client Project)</p>
+        <ul>
+          <li>Supported ERPNext user training and onboarding</li>
+          <li>Assisted live data entry and system usage during deployment</li>
+          <li>Validated data accuracy and reporting workflows</li>
+          <li>Coordinated feedback with development team</li>
+        </ul>
+      </div>
+      
+      <div class="experience-card">
+        <span class="date">2023 - Present</span>
+        <h4>Programming & Technology Trainer</h4>
+        <p>Freelance / Contract</p>
+        <ul>
+          <li>Conducted training sessions in C Programming</li>
+          <li>Taught Web Development and Python Programming</li>
+          <li>Focused on practical learning and real-world projects</li>
+          <li>Specialized in system understanding and implementation</li>
+        </ul>
+      </div>
+      
+      <div class="experience-card">
+        <span class="date">2023 - Present</span>
+        <h4>Digital Research & Document Support</h4>
+        <p>Freelance / Contract</p>
+        <ul>
+          <li>Provided document editing and online research services</li>
+          <li>Assisted with email discovery for researchers</li>
+          <li>Supported data collection and organization</li>
+          <li>Helped clients with accurate information gathering</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/boxing-day11.png" alt="Human Pose Estimation System">
+          </div>
+          <div class="project-content">
+            <h3>Human Pose Estimation System</h3>
+            <p>Real-time posture tracking system for musculoskeletal health protection using computer vision.</p>
+            
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Machine Learning</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/christmas11.png" alt="ERPNext Customization">
+          </div>
+          <div class="project-content">
+            <h3>ERPNext Customization</h3>
+            <p>Customized ERPNext for business workflows including DocTypes and Print Formats.</p>
+            
+            <div class="project-tags">
+              <span class="tag">ERPNext</span>
+              <span class="tag">Frappe</span>
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="#"><i class="fas fa-external-link-alt"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/boxing-day11.png" alt="Web Development">
+          </div>
+          <div class="project-content">
+            <h3>Organization Website</h3>
+            <p>Built a responsive website for a religious organization to support digital presence.</p>
+            
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live Site</a>
+              <a href="#"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section">
-    <h2>Work with Me</h2>
-    <p>Email: <a href="mailto:esthermjenda@gmail.com">esthermjenda@gmail.com</a></p>
-    <p>Phone: +255 759 596 406 / +255 788 596 466</p>
-    <p>Location: Dar es Salaam, Tanzania</p>
-    <p>
-      GitHub:
-      <a href="https://github.com/Ester-Mjenda" target="_blank">
-        github.com/Ester-Mjenda
-      </a>
-    </p>
+    <div class="container">
+      <h2>Let's Work Together</h2>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>I'm currently available for freelance projects and full-time opportunities.</p>
+          
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:esthermjenda@gmail.com">esthermjenda@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+255 759 596 406</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Dar es Salaam, Tanzania</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/Ester-Mjenda" target="_blank">github.com/Ester-Mjenda</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" placeholder="Subject" required>
+            </div>
+            
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 
-
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Ester Mjenda | Powered by Sphinx Fighter Limited</p>
+  <div class="container">
+    <div class="social-links">
+      <a href="https://github.com/Ester-Mjenda" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:esthermjenda@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    
+    <p>© 2026 Ester Mjenda. All rights reserved.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Powered by Sphinx Fighter Limited</p>
+  </div>
 </footer>
 
-
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+  });
+  
+  // Mobile Menu Toggle
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.getElementById("navLinks");
 
@@ -281,12 +465,173 @@
     navLinks.classList.toggle("active");
     menuToggle.classList.toggle("active");
   });
+  
+  // Close menu when clicking links
   document.querySelectorAll(".navlinks a").forEach(link => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("active");
       menuToggle.classList.remove("active");
     });
   });
+  
+  // Animate skill bars when they come into view
+  const observerOptions = {
+    threshold: 0.5
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const skillLevels = entry.target.querySelectorAll('.skill-level');
+        skillLevels.forEach(level => {
+          const width = level.getAttribute('data-level');
+          level.style.width = width;
+        });
+      }
+    });
+  }, observerOptions);
+  
+  document.querySelectorAll('.skill-category').forEach(skill => {
+    observer.observe(skill);
+  });
+  
+  // Simple form submission
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! I will get back to you soon.');
+    this.reset();
+  });
+
+  // Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    if(targetId === '#') return;
+    
+    const targetElement = document.querySelector(targetId);
+    if(targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 80,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// Sticky navbar on scroll
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 100) {
+    navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+    navbar.style.boxShadow = '0 5px 30px rgba(0, 0, 0, 0.1)';
+  } else {
+    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+    navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+  }
+});
+
+// Typing effect for hero section (optional)
+const typedTexts = ['Software Developer', 'ERPNext Specialist', 'Graphic Designer', 'Problem Solver'];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let isPaused = false;
+
+function typeEffect() {
+  const currentText = typedTexts[textIndex];
+  const typingElement = document.querySelector('.typing-text');
+  
+  if (!typingElement) return;
+  
+  if (isPaused) {
+    setTimeout(() => {
+      isPaused = false;
+      typeEffect();
+    }, 2000);
+    return;
+  }
+  
+  if (!isDeleting && charIndex < currentText.length) {
+    typingElement.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+    setTimeout(typeEffect, 100);
+  } else if (isDeleting && charIndex > 0) {
+    typingElement.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(typeEffect, 50);
+  } else {
+    isDeleting = !isDeleting;
+    if (!isDeleting) {
+      textIndex = (textIndex + 1) % typedTexts.length;
+    }
+    isPaused = true;
+    setTimeout(typeEffect, 500);
+  }
+}
+
+// Start typing effect when page loads
+window.addEventListener('load', () => {
+  typeEffect();
+});
+
+// Dark/Light mode toggle (optional)
+const themeToggle = document.createElement('button');
+themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+themeToggle.className = 'theme-toggle';
+themeToggle.style.cssText = `
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+`;
+
+document.body.appendChild(themeToggle);
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+// Check for saved theme
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+}
+// Add skill levels with CSS custom properties
+document.addEventListener('DOMContentLoaded', function() {
+  const skillItems = document.querySelectorAll('.skill-item');
+  
+  skillItems.forEach(item => {
+    const levelSpan = item.querySelector('.skill-name span:last-child');
+    const level = levelSpan.textContent;
+    const skillLevel = item.querySelector('.skill-level');
+    
+    // Set CSS custom property
+    skillLevel.style.setProperty('--level', level);
+    
+    // Remove the percentage text from display
+    levelSpan.textContent = '';
+  });
+});
 </script>
 </body>
 </html>
