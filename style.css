@@ -755,6 +755,34 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Contact Form Styles */
+.small-text {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 0.2rem;
+}
+
+.form-message {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.form-message.success {
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  display: block;
+}
+
+.form-message.sending {
+  background: rgba(59, 130, 246, 0.1);
+  color: #2563eb;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  display: block;
+}
 /* ====== FOOTER ====== */
 footer {
   background: #0f172a;
@@ -828,9 +856,41 @@ footer p {
   }
   
   .menu-toggle {
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+
+  }
+   #openIcon {
     display: block;
+    font-size: 1.4rem;
+    color: var(--dark);
+    transition: all 0.3s ease;
   }
   
+  #closeIcon {
+    display: none;
+    font-size: 1.4rem;
+    color: var(--dark);
+    transition: all 0.3s ease;
+  }
+  
+  /* When menu is active */
+  .menu-toggle.active #openIcon {
+    display: none;
+  }
+  
+  .menu-toggle.active #closeIcon {
+    display: block;
+  }
   .navlinks {
     position: fixed;
     top: 0;
@@ -936,29 +996,139 @@ footer p {
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
 }
 
-/* Dark Mode Styles */
+/* ====== DARK MODE STYLES ====== */
 body.dark-mode {
-  --dark: #f8fafc;
-  --light: #0f172a;
-  --text: #cbd5e1;
+  --primary: #818cf8;       /* Lighter indigo for dark mode */
+  --secondary: #a78bfa;     /* Lighter violet */
+  --accent: #22d3ee;        /* Brighter cyan */
+  --dark: #f8fafc;          /* Light text */
+  --light: #0f172a;         /* Dark background */
+  --text: #cbd5e1;          /* Light gray text */
   background-color: #0f172a;
   color: var(--text);
 }
 
+/* ====== NAVBAR DARK MODE FIXES ====== */
 body.dark-mode .navbar {
   background: rgba(15, 23, 42, 0.98);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .logo {
+  color: #e2e8f0;
+}
+
+body.dark-mode .logo span {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+body.dark-mode .navlinks {
+  background: transparent;
+}
+
+body.dark-mode .navlinks a {
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+body.dark-mode .navlinks a:hover {
+  color: var(--primary);
+  background: rgba(129, 140, 248, 0.15);
+  transform: translateY(-1px);
+}
+
+body.dark-mode .navlinks .cta-nav {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(129, 140, 248, 0.3);
+}
+
+body.dark-mode .navlinks .cta-nav:hover {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(129, 140, 248, 0.4);
+}
+
+body.dark-mode .menu-toggle {
+  color: #e2e8f0;
+}
+
+body.dark-mode .menu-toggle:hover {
+  color: var(--primary);
+}
+
+/* Mobile Menu in Dark Mode */
+@media (max-width: 768px) {
+  body.dark-mode .navlinks {
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(15px);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  body.dark-mode .navlinks a {
+    color: #cbd5e1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  body.dark-mode .navlinks a:hover {
+    background: rgba(129, 140, 248, 0.15);
+    color: var(--primary);
+  }
+  
+  body.dark-mode .navlinks .cta-nav {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    margin-top: 0.5rem;
+    border: none;
+  }
+}
+
+/* Navbar Logo Image in Dark Mode */
+body.dark-mode .navbar img {
+  filter: brightness(1.2) contrast(1.1);
+}
+
+/* Navbar active state in dark mode */
+body.dark-mode .navlinks a.active {
+  color: var(--primary);
+  background: rgba(129, 140, 248, 0.1);
+}
+
+/* Navbar scroll effect in dark mode */
+body.dark-mode .navbar.scrolled {
+  background: rgba(15, 23, 42, 0.98);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+}
+body.dark-mode .navbar {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 body.dark-mode .logo,
 body.dark-mode .navlinks a {
-  color: var(--text);
+  color: #e2e8f0;
 }
 
 body.dark-mode .navlinks a:hover {
-  background: rgba(99, 102, 241, 0.15);
+  color: var(--primary);
+  background: rgba(129, 140, 248, 0.15);
 }
 
+body.dark-mode .navlinks .cta-nav {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+body.dark-mode .navlinks .cta-nav:hover {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+}
+
+/* Hero Section in Dark Mode */
 body.dark-mode .hero {
   background: linear-gradient(135deg, 
     #1e293b 0%, 
@@ -966,28 +1136,335 @@ body.dark-mode .hero {
     #0c1424 100%);
 }
 
-body.dark-mode .hero .left h4.subtitle {
-  color: var(--text);
+body.dark-mode .hero::before {
+  background: linear-gradient(135deg, 
+    rgba(129, 140, 248, 0.1) 0%, 
+    rgba(167, 139, 250, 0.05) 100%);
 }
 
+body.dark-mode .hero .left h4 {
+  color: var(--primary);
+}
+
+body.dark-mode .hero .left h1 {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--primary);
+}
+
+body.dark-mode .hero .left h4.subtitle {
+  color: #e2e8f0;
+}
+
+body.dark-mode .hero .left p {
+  color: #94a3b8;
+}
+
+body.dark-mode .hero .right img {
+  border: 8px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons in Dark Mode */
+body.dark-mode .btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: 0 4px 15px rgba(129, 140, 248, 0.3);
+}
+
+body.dark-mode .btn-primary:hover {
+  box-shadow: 0 6px 25px rgba(129, 140, 248, 0.4);
+}
+
+body.dark-mode .btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+body.dark-mode .btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Social Icons in Dark Mode */
+body.dark-mode .social-icons a {
+  background: #1e293b;
+  color: #cbd5e1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .social-icons a:hover {
+  color: var(--primary);
+}
+
+/* Ticker in Dark Mode */
+body.dark-mode .ticker {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+/* Sections in Dark Mode */
 body.dark-mode .section {
   background: var(--light);
 }
 
-body.dark-mode .skill-category,
-body.dark-mode .experience-card,
-body.dark-mode .project-card,
-body.dark-mode .contact-form {
-  background: #1e293b;
-  border-color: #334155;
+body.dark-mode .section h2 {
+  color: #e2e8f0;
 }
 
-body.dark-mode .stats {
+body.dark-mode .section h2::after {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+/* About Section in Dark Mode */
+body.dark-mode #about {
+  background: #0f172a;
+}
+
+body.dark-mode .about-content h3 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .about-content p {
+  color: #94a3b8;
+}
+
+body.dark-mode .stat {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border: 1px solid #334155;
+}
+
+body.dark-mode .stat h4 {
+  color: var(--primary);
+}
+
+body.dark-mode .stat p {
+  color: #94a3b8;
+}
+
+body.dark-mode .about-image::before {
+  border-color: var(--primary);
+  opacity: 0.5;
+}
+
+/* Skills Section in Dark Mode */
+body.dark-mode #skills {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+body.dark-mode .skill-category {
   background: #1e293b;
-  border-color: #334155;
+  border: 1px solid #334155;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .skill-category h3 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .skill-name {
+  color: #cbd5e1;
+}
+
+body.dark-mode .skill-bar {
+  background: #334155;
+}
+
+body.dark-mode .skill-level {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
 body.dark-mode .tech-item {
   background: #1e293b;
-  border-color: #334155;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+}
+
+body.dark-mode .tech-item:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Experience Section in Dark Mode */
+body.dark-mode #experience {
+  background: #0f172a;
+}
+
+body.dark-mode .experience-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .experience-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .experience-card h4 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .experience-card > p {
+  color: var(--primary);
+}
+
+body.dark-mode .experience-card li {
+  color: #94a3b8;
+}
+
+body.dark-mode .experience-card li::before {
+  color: var(--primary);
+}
+
+/* Projects Section in Dark Mode */
+body.dark-mode #projects {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+body.dark-mode .project-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .project-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .project-image {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+body.dark-mode .project-content h3 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .project-content p {
+  color: #94a3b8;
+}
+
+body.dark-mode .project-links a {
+  color: var(--primary);
+}
+
+body.dark-mode .project-links a:hover {
+  color: var(--secondary);
+}
+
+/* Contact Section in Dark Mode */
+body.dark-mode #contact {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+body.dark-mode #contact h2 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .contact-info h3 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .contact-info > p {
+  color: #94a3b8;
+}
+
+body.dark-mode .contact-item h4 {
+  color: #cbd5e1;
+}
+
+body.dark-mode .contact-item a,
+body.dark-mode .contact-item p {
+  color: #94a3b8;
+}
+
+body.dark-mode .contact-item a:hover {
+  color: var(--accent);
+}
+
+body.dark-mode .contact-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .contact-form h3 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e2e8f0;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .form-check label {
+  color: #94a3b8;
+}
+
+body.dark-mode .form-message.success {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+body.dark-mode .form-message.sending {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+body.dark-mode .form-message.error {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Footer in Dark Mode */
+body.dark-mode footer {
+  background: #0f172a;
+  border-top: 1px solid #334155;
+}
+
+body.dark-mode .social-links a {
+  color: #94a3b8;
+}
+
+body.dark-mode .social-links a:hover {
+  color: var(--accent);
+}
+
+body.dark-mode footer p {
+  color: #94a3b8;
+}
+
+body.dark-mode footer a {
+  color: #94a3b8;
+}
+
+body.dark-mode footer a:hover {
+  color: var(--accent);
+}
+
+/* Theme Toggle Button in Dark Mode */
+body.dark-mode .theme-toggle {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: 0 4px 15px rgba(129, 140, 248, 0.4);
+}
+
+body.dark-mode .theme-toggle:hover {
+  box-shadow: 0 6px 20px rgba(129, 140, 248, 0.6);
 }
