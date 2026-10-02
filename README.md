@@ -37,9 +37,9 @@ with a passion for building modern web applications, ERP systems, and creative d
 
 ## Contact
 
-📧 Email: esthermjenda@gmail.com  
-📞 Phone: +255 759 596 406  
-💻 GitHub: https://github.com/Ester-Mjenda  
+  Email: esthermjenda@gmail.com  
+  Phone: +255 759 596 406  
+  GitHub: https://github.com/Ester-Mjenda  
 
 
 © 2026 Ester Mjenda | Powered by **Sphinx Fighter Limited**
